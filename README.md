@@ -1,20 +1,18 @@
 # LoveSpider
-一款适用于微博爬虫进行舆情分析
-1. 下载与安装
-克隆仓库：git clone https://github.com/2904202165/LoveSpider.git
-安装Scrapy：pip install scrapy
-安装依赖：pip install -r requirements.txt
-2. 配置设置
-设置Cookie：在setting.py中填写DEFAULT_REQUEST_HEADERS的cookie。
-设置搜索关键词：修改KEYWORD_LIST参数，可设置为单个关键词、多个关键词或包含特定话题的关键词。
-设置搜索时间范围：通过修改START_DATE和END_DATE参数来指定。
-设置进一步搜索阈值（可选）：调整FURTHER_THRESHOLD的值以优化搜索结果。
-设置结果保存类型（可选）：通过修改ITEM_PIPELINES来选择保存类型，如写入csv文件、数据库等。
-设置等待时间（可选）：通过修改DOWNLOAD_DELAY参数来控制访问间隔。
-设置微博类型（可选）：通过修改WEIBO_TYPE参数来筛选微博类型。
-设置包含内容（可选）：通过修改CONTAIN_TYPE参数来筛选包含特定内容的微博。
-筛选微博发布地区（可选）：通过修改REGION参数来筛选微博发布地区。
-配置数据库（可选）：填写MongoDB或MySQL的配置信息。
+一款适用于微博爬虫舆情分析的Spider
+1. 部署环境
+服务器要求：ubuntu 22.04
+Python环境：3.8
+Pillow >= 8.1
+2.下载与安装
+克隆仓库：
+git clone https://github.com/2904202165/LoveSpider.git
+安装:
+Scrapy：pip install scrapy
+安装依赖：
+pip install -r requirements.txt
+2.连续获取一个或多个**微博关键词搜索**结果，并将结果写入文件（可选）、数据库（可选）等。所谓微博关键词搜索即：**搜索正文中包含指定关键词的微博**，可以指定搜索的时间范围。<br>
+举个栗子，比如你可以搜索包含关键词“再见爱人”且发布日期在2024-11-25和2024-11-27之间的微博。搜索结果数量巨大，对于非常热门的关键词，在一天的指定时间范围，可以获得**1000万**以上的搜索结果。注意这里的一天指的是时间筛选范围，具体多长时间将这1000万微博下载到本地还要看获取的速度。1000万只是一天时间范围可获取的微博数量，如果想获取更多微博，可以加大时间范围，比如10天，最多可以获得1000万X10=1亿条搜索结果，当然你也可以再加大时间范围。对于大多数关键词，微博一天产生的相关搜索结果应该低于1000万，因此可以说**本程序可以获取指定关键词的全部或近似全部的搜索结果**。本程序可以获得几乎全部的微博信息，如微博正文、发布者等
 3. 运行程序
-运行命令：scrapy crawl search或scrapy crawl search -s JOBDIR=crawls/search（后者可保存进度）。
-注意：使用“Ctrl + C”一次来正确保存进度，以便下次继续获取数据。
+运行命令：
+scrapy crawl search -s JOBDIR=crawls/search
