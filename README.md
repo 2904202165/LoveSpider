@@ -31,7 +31,8 @@ scrapy crawl search -s JOBDIR=crawls/search
 ```
 
 #### 5. 数据库备份
-**可以通过设置定时任务备份数据库数据**
+**可以通过设置定时任务备份数据库数据**  
+
 <img width="630" alt="2c54ac47c3f7730a32b32a0467128a5" src="https://github.com/user-attachments/assets/dcc7ee17-0d1d-4d84-84b8-ece5658c46d4">
 
 #### 6. 结果示例（可下载）：
