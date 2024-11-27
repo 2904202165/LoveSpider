@@ -30,10 +30,14 @@ pip install -r requirements.txt
 scrapy crawl search -s JOBDIR=crawls/search
 ```
 
-#### 5. 数据库备份
+
+#### 5. 连接Mysql
+<img width="954" alt="e80ba7b66cea88342f99a335e7353d5" src="https://github.com/user-attachments/assets/baa2f25a-5069-46a9-998f-4360865aaeaa">
+
+#### 6. 数据库备份
 **可以通过设置定时任务备份数据库数据**  
 
 <img width="630" alt="2c54ac47c3f7730a32b32a0467128a5" src="https://github.com/user-attachments/assets/dcc7ee17-0d1d-4d84-84b8-ece5658c46d4">
 
-#### 6. 结果示例（可下载）：
+#### 7. 结果示例（可下载）：
 [再见爱人结果示例.csv](https://github.com/user-attachments/files/17933636/default.csv)
