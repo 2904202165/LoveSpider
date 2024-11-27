@@ -1,7 +1,8 @@
 ### Love Spider
 
 #### 1. 部署环境
-服务器要求：ubuntu 22.04  
+服务器要求：  
+ubuntu 22.04  
 Python环境：3.8  
 Pillow >= 8.1
 
