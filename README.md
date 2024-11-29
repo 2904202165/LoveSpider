@@ -47,5 +47,6 @@ scrapy crawl search -s JOBDIR=crawls/search
 结合第六步的操作，我们可以彻底解放双手，让子弹再飞一会儿~
 但是爬取的时候因为我们加入了cookie，有时候cookie会刷新，因此如果隔一段时间看到我们的数据库没有数据加入了，要看看是不是cookie更新了等问题所导致
 #### 7. 数据库结构展示：
+<img width="524" alt="8d0f6c9a4fc2351d3992c54e2728353" src="https://github.com/user-attachments/assets/c29f7576-626b-4c11-ae09-886a8b261046">
 
 
