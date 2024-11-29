@@ -41,9 +41,9 @@ scrapy crawl search -s JOBDIR=crawls/search
 
 #### 7.爬虫自动化实现
 如果爬取的数据量巨大，通过SSH的方法会受到网络等因素影响我们的爬取进度，因此可以通过在宝塔终端进行爬取
-<img width="470" alt="1c4ae34fbf5c18c03989b0acbe24559" src="https://github.com/user-attachments/assets/c3b9c153-a1aa-4d4b-8503-cfe35ab776d9">
+<img width="470" alt="1c4ae34fbf5c18c03989b0acbe24559" src="https://github.com/user-attachments/assets/c3b9c153-a1aa-4d4b-8503-cfe35ab776d9">  
 但是我们不难发现如果爬取的过程中我们只能在这个界面，不能做其他如数据库备份、数据查看等操作，因此我们可以通过在文件执行界面写一个运行脚本之后在PM2管理器上运行我们的脚本就可以实现自动化后台挂起爬取数据了
-<img width="462" alt="ac6d3bd9a5badee15e79eef06fa0e42" src="https://github.com/user-attachments/assets/73b23541-9734-4e93-b677-8c9d10c19c74">
+<img width="462" alt="ac6d3bd9a5badee15e79eef06fa0e42" src="https://github.com/user-attachments/assets/73b23541-9734-4e93-b677-8c9d10c19c74">  
 结合第六步的操作，我们可以彻底解放双手，让子弹再飞一会儿~
 但是爬取的时候因为我们加入了cookie，有时候cookie会刷新，因此如果隔一段时间看到我们的数据库没有数据加入了，要看看是不是cookie更新了等问题所导致
 #### 7. 数据库结构展示：
