@@ -46,7 +46,10 @@ scrapy crawl search -s JOBDIR=crawls/search
 <img width="462" alt="ac6d3bd9a5badee15e79eef06fa0e42" src="https://github.com/user-attachments/assets/73b23541-9734-4e93-b677-8c9d10c19c74">  
 结合第六步的操作，我们可以彻底解放双手，让子弹再飞一会儿~
 但是爬取的时候因为我们加入了cookie，有时候cookie会刷新，因此如果隔一段时间看到我们的数据库没有数据加入了，要看看是不是cookie更新了等问题所导致
-#### 7. 数据库结构展示：
+#### 7. 数据库结构可视化展示：
 <img width="524" alt="8d0f6c9a4fc2351d3992c54e2728353" src="https://github.com/user-attachments/assets/c29f7576-626b-4c11-ae09-886a8b261046">
+如果我们想实时查看数据库，可以通过部署网站实现
+![image](https://github.com/user-attachments/assets/b804571a-c886-4063-a483-67832bce3c17)
+![image](https://github.com/user-attachments/assets/265f9813-44de-4a02-bb96-b01a2fe63b72)
 
 
